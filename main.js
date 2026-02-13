@@ -21,7 +21,7 @@ const { pipeline } = require('stream/promises');
 const TOKEN = '8512274157:AAFWxwWVvaEppB5pxpM1h_U16Eq6Gwh4S3g';
 const ADMIN_ID = '709324792';
 const PORT = 3000;
-const BASE_URL = 'https://runcloud.uz'; 
+const BASE_URL = 'https://runclaud.onrender.com'; 
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 const app = express();
@@ -354,3 +354,4 @@ process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection:', reason);
 
 });
+
