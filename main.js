@@ -134,7 +134,7 @@ bot.on('callback_query', async (q) => {
         }
 
         if (data === "action_profile") {
-            const u = db.users[chatId] || { name: 'Noma'lum', balance: 0, joined: new Date() };
+            const u = db.users[chatId] || {nomi: 'Noma\'lum', balans: 0, qoshildi: yangi_sana()};
             const mySites = db.projects.filter(p => p.owner === chatId).length;
             const profile = `👤 **Profil**\n---\n🆔 ID: \`${chatId}\`\n👤 Ism: ${u.name}\n💰 Balans: ${u.balance.toLocaleString()} so'm\n📂 Loyihalar: ${mySites} ta`;
             return bot.editMessageText(profile, { chat_id: chatId, message_id: msgId, parse_mode: 'Markdown', reply_markup: UI_BACK });
@@ -352,4 +352,5 @@ process.on('uncaughtException', (err) => {
 
 process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection:', reason);
+
 });
