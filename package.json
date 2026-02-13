@@ -1,0 +1,17 @@
+{
+  "name": "runcloud-bot",
+  "version": "1.0.0",
+  "description": "Hosting Bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "axios": "^1.4.0",
+    "adm-zip": "^0.5.10",
+    "moment": "^2.29.4"
+  }
+}
